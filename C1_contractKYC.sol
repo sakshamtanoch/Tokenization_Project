@@ -1,10 +1,10 @@
 
 pragma solidity^0.5.5;
 
-contract KYCContract is Ownable{
-
-    // adding a smart contract so that only owner is able to allw KYC 
+ // adding a smart contract so that only owner is able to allw KYC 
     import "@openzeppelin/contracts/ownership/Ownable.sol";
+
+contract KYCContract is Ownable{
 
     mapping (address => bool ) public KYCallowed;
 
